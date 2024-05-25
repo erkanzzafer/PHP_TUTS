@@ -2,12 +2,17 @@
 if (isset($_POST['submit'])) {
     echo "yes its works";
 
-
-    if (strlen($_POST['username'])<5){
+    $name = array("ali", "veli", "hakan", "ahmet");
+    if (strlen($_POST['username']) < 5) {
         echo "isim en az 6 karakter olmalı";
     }
 
-    if (strlen($_POST['password'])< 5){
+    if (!in_array($_POST['username'], $name)) {
+        echo "böyle bir isim kayıtlı değil";
+    } else {
+        echo "tebrikler";
+    }
+    if (strlen($_POST['password']) < 5) {
         echo "Şifre en az 6 karakter olmalı";
     }
 
