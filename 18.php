@@ -33,7 +33,6 @@ if (isset($_POST['submit'])) {
     </head>
     
     <body>
-    
         <form action="" method="post">
             <input type="text" name="username" placeholder="Enter Name"><br>
             <input type="password" name="password" placeholder="Enter Password"><br>
@@ -48,4 +47,3 @@ if (isset($_POST['submit'])) {
     </html>';
 }
 
-?>
