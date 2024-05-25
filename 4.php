@@ -13,6 +13,7 @@ print_r($number);
 
 $names=array("first_name"=> 'Zafer');
 print_r ($names);
+
 echo $names["first_name"];
 
 ?>
