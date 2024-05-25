@@ -9,6 +9,7 @@ if (isset($_POST['submit'])) {
     echo "tebrikler";
     $connection = mysqli_connect("localhost", "root", "", "loginapp");
     $username=mysqli_real_escape_string($connection, $username);
+    $password=mysqli_real_escape_string($connection, $password);
     if ($connection) {
         echo "we are connected";
         $query = "DELETE FROM users WHERE id=12";
