@@ -11,6 +11,10 @@ if (isset($_POST['submit'])) {
         echo "böyle bir isim kayıtlı değil";
     } else {
         echo "tebrikler";
+        $connection = mysqli_connect("localhost", "root", "", "loginapp");
+        if ($connection) {
+            echo "we are connected";
+        }
     }
     if (strlen($_POST['password']) < 5) {
         echo "Şifre en az 6 karakter olmalı";
